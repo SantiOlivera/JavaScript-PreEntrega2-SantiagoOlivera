@@ -1,18 +1,3 @@
-
-// let confirmacion = prompt("Desea hacer otro cálculo? (si/no)").toLowerCase()
-
-// if (confirmacion == "si") {
-//     function sumar () {
-//         let numeroA = parseInt(prompt("Monto a pagar"))
-//         let numeroB = 25
-//         let resultado = numeroB * numeroA / 100
-
-//         return resultado
-//     }
-
-//     console.log(sumar())
-// }
-
 alert("¡Bienvenido al sistema de reservas!")
 
 function mostrarReserva (dato1, dato2, dato3, dato4, dato5, dato6) {
@@ -105,5 +90,3 @@ while (turno == "si") {
 
     turno = prompt("Quiere reservar otro turno? (si/no)").toLowerCase()
 }
-
-
