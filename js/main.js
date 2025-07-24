@@ -34,7 +34,7 @@ while (turno == "si") {
     let dia = parseInt(prompt("Día:"))
 
     console.log("Precios: Hasta las 20hs el precio es de $22.000 - De las 20hs en adelante el precio es de $32.000")
-    alert("ATENCION: ¡LOS TURNOS A PARTIR DE LAS 20HS INCLUSIVE TIENEN UN 10% DE DESCUENTO!")
+    alert("ATENCION: ¡LOS TURNOS A PARTIR DE LAS 20HS (INCLUSIVE) TIENEN UN 10% DE DESCUENTO!")
 
 
     console.log("1.Futbol 5 / 2.Futbol 7")
@@ -43,7 +43,6 @@ while (turno == "si") {
         alert("Error al ingresar el numero")
         numCanchas = parseInt(prompt("¿Qué tipo de cancha querés reservar? (1/2)"))
     }
-
 
 
     if (numCanchas == 1) {
@@ -68,7 +67,7 @@ while (turno == "si") {
 
         hora = parseInt(prompt("Ingrese el horario que quiere reservar (ej: '18')"))
         while (hora != 18 && hora != 19 && hora != 22 && hora != 23) {
-            alert("Horario inválido. Los horarios disponibles son: 16, 17, 20, 21")
+            alert("Horario inválido. Los horarios disponibles son: 18, 19, 22, 23")
             hora = parseInt(prompt("Ingrese el horario que quiere reservar (ej: '18')"))
         }
 
