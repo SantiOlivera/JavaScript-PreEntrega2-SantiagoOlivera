@@ -7,9 +7,40 @@
     <!-- JS -->
     <script defer src="./js/main.js"></script>
 
-    <title>PRIMERA ENTREGA</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/estilo.css">
+
+    <title>SEGUNDA ENTREGA</title>
 </head>
 <body>
-    <h1>Santiago Olivera</h1>
+    <h1>Reserva tu cancha</h1>
+    
+    <h2>Estos son nuestros horarios disponibles:</h2>
+    
+    <div class="contenedorCanchas">
+        <p id="horarios"></p>
+    </div>
+    
+    
+    <section id="formulario">
+        <input type="text" id="nombre" placeholder="Nombre y Apellido">
+        <input type="tel" id="telefono" placeholder="Teléfono">
+        <select id="tipoCancha">
+            <option value="F5">Fútbol 5</option>
+            <option value="F7">Fútbol 7</option>
+        </select>
+        <input type="date" id="fecha">
+        <input type="time" id="hora" placeholder="Horario">
+        <button id="botonReservar">Reservar</button>
+    </section>
+
+    <h2>Listado de reservas</h2>
+    <div id="listado"></div>
+
+    <div class="contenedorBorrar">
+        <p>Desea borrar todas las reservas?</p>
+        <button class="botonBorrar" id="botonBorrarReservas">Borrar</button>
+    </div>
+    
 </body>
 </html>
