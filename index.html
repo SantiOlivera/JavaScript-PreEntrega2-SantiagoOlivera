@@ -1,46 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- VANILLA CALENDAR -->
+    <link href="https://cdn.jsdelivr.net/npm/vanilla-calendar-pro/styles/index.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-calendar-pro/index.js" defer></script>
+
     <!-- JS -->
+    <script defer src="./js/reserva.js"></script>
     <script defer src="./js/main.js"></script>
 
     <!-- CSS -->
     <link rel="stylesheet" href="./css/estilo.css">
 
-    <title>SEGUNDA ENTREGA</title>
+    <title>PROYECTO FINAL</title>
 </head>
+
 <body>
-    <h1>Reserva tu cancha</h1>
-    
-    <h2>Estos son nuestros horarios disponibles:</h2>
-    
+    <h1>Reservá tu cancha</h1>
+
+    <h2>Estos son nuestros horarios:</h2>
+
     <div class="contenedorCanchas">
         <p id="horarios"></p>
     </div>
-    
-    
+
+
     <section id="formulario">
         <input type="text" id="nombre" placeholder="Nombre y Apellido">
         <input type="tel" id="telefono" placeholder="Teléfono">
         <select id="tipoCancha">
+            <option value="">-- Seleccionar cancha --</option>
             <option value="F5">Fútbol 5</option>
             <option value="F7">Fútbol 7</option>
         </select>
-        <input type="date" id="fecha">
-        <input type="time" id="hora" placeholder="Horario">
+        <div id="calendar"></div>
+        <select id="hora">
+            <option value="">-- Seleccionar hora --</option>
+        </select>
         <button id="botonReservar">Reservar</button>
     </section>
+
 
     <h2>Listado de reservas</h2>
     <div id="listado"></div>
 
-    <div class="contenedorBorrar">
-        <p>Desea borrar todas las reservas?</p>
-        <button class="botonBorrar" id="botonBorrarReservas">Borrar</button>
-    </div>
-    
+   
+    <!-- SEETALERT -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
+
 </html>
